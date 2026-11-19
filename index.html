@@ -18,10 +18,10 @@
 		<script>
 			function getData() {
 				let name = document.getElementById("nameInput").value;
-				let age = parseInt(document.getElementById("ageInput").value);
+				let age = parseInt(document.getElementById("ageInput").value); // parseInt() turns the text that .value returns into an integer that we can compare later
 
 				if (age >= 17) {
-					document.getElementById("message").textContent = "Hi " + name + " You are eligible to apply for a driving license.";
+					document.getElementById("message").textContent = "Hi " + name + " You are eligible to apply for a driving license."; // .textContent modifies the text in the p tag with id 'message'
 				}
 			}
 		</script>
