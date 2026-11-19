@@ -1,0 +1,10 @@
+#message { /* Targets the p tag with the 'message' id */
+	color: aqua;
+}
+
+form {
+	border: solid 2px;
+	border-color: pink;
+	margin: 8px;
+	padding: 8px;
+}

@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Week 10 Exercise</title>
+		<link rel="stylesheet" href="styles.css"> <!-- Link stylesheett -->
 	</head>
 	<body>
 		<form>
@@ -14,10 +15,10 @@
 			<p id="message"></p>
 			<button type="button" onClick="getData()">Submit</button>
 		</form>
-		
+
 		<script>
 			function getData() {
-				let name = document.getElementById("nameInput").value;
+				let name = document.getElementById("nameInput").value; // .value returns the value of what is typed in the input box
 				let age = parseInt(document.getElementById("ageInput").value); // parseInt() turns the text that .value returns into an integer that we can compare later
 
 				if (age >= 17) {
