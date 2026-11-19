@@ -11,13 +11,18 @@
 			<label for="ageInput">Enter Your age: </label>
 			<input id="ageInput"></input>
 			<br>
+			<p id="message"></p>
 			<button type="button" onClick="getData()">Submit</button>
 		</form>
 		
 		<script>
 			function getData() {
-				let data = document.getElementById("myInput").value;
-				document.write(data);
+				let name = document.getElementById("nameInput").value;
+				let age = parseInt(document.getElementById("ageInput").value);
+
+				if (age >= 17) {
+					document.getElementById("message").textContent = "You are eligible to apply for a driving license.";
+				}
 			}
 		</script>
 	</body>
